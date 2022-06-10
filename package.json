@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/beatrizxavierds/hello-world-js-service/issues"
   },
-  "homepage": "https://github.com/beatrizxavierds/hello-world-js-service#readme"
+  "homepage": "https://github.com/beatrizxavierds/hello-world-js-service#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
