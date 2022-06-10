@@ -1,0 +1,19 @@
+{
+  "name": "hello-world-js-service",
+  "version": "1.0.0",
+  "description": "meu primeiro serviço REST em Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatrizxavierds/hello-world-js-service.git"
+  },
+  "author": "Beatriz Xavier",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/beatrizxavierds/hello-world-js-service/issues"
+  },
+  "homepage": "https://github.com/beatrizxavierds/hello-world-js-service#readme"
+}
