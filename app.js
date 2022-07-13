@@ -10,3 +10,5 @@ server.use(express.json())
 //acordo coletivo para comunicações http
 server.listen(8080,() => console.log("servidor online"))
 
+ //endpoints
+ server.get("/",(req,res) =>{res.send("olá, mundo! :)")})
