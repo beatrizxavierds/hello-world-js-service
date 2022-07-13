@@ -20,6 +20,12 @@ server.get("/nome", function (req, res) {
   res.status(200).send(nome);
 });
 
+server.get("/nome/:sobrenome", function (req, res) {
+  //console.log(req.params.sobrenome)
+  let nome = retornaNome();
+  res.status(200).send(nome + " " + req.params.sobrenome);
+});
+
 //declarando funções
 // () => {}
 //function (){}
