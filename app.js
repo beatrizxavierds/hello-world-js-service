@@ -12,3 +12,7 @@ server.listen(8080,() => console.log("servidor online"))
 
  //endpoints
  server.get("/",(req,res) =>{res.send("olá, mundo! :)")})
+
+ server.get("/nome",function (req,res) {
+    res.status(200).send("beatriz :)")
+})
