@@ -16,5 +16,14 @@ server.get("/", (req, res) => {
 });
 
 server.get("/nome", function (req, res) {
-  res.status(200).send("beatriz :)");
+  let nome = retornaNome();
+  res.status(200).send(nome);
 });
+
+//declarando funções
+// () => {}
+//function (){}
+
+function retornaNome() {
+  return "beatriz";
+}
