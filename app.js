@@ -26,10 +26,24 @@ server.get("/nome/:sobrenome", function (req, res) {
   res.status(200).send(nome + " " + req.params.sobrenome);
 });
 
-//declarando funções
-// () => {}
-//function (){}
-
 function retornaNome() {
   return "beatriz";
 }
+
+server.get("/soma/:numero1/:numero2", function (req, res) {
+  //console.log(req)
+  //let ss = soma();
+  let numero1 = req.params.numero1;
+  let numero2 = req.params.numero2;
+  let resultado = soma(parseInt(numero1), parseInt(numero2));
+  res.status(200).send(resultado);
+});
+
+function soma(numero1, numero2) {
+  let numero3 = numero1 + numero2;
+  return "soma =" + numero3;
+}
+
+//declarando funções
+// () => {}
+//function (){}
