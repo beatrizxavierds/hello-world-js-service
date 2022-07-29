@@ -38,6 +38,17 @@ server.get("/soma/:numero1/:numero2", function (req, res) {
   res.status(200).send("o resultado da soma é:" + resultado);
 });
 
+server.get("/subtrair/:numeroA/:numeroB", subtracao);
+
+function subtracao(req, res) {
+  let numeroA = req.params.numeroA;
+  let numeroB = req.params.numeroB;
+
+  let resultado = calculadora.subtrair(parseInt(numeroA), parseInt(numeroB));
+
+  res.status(200).send("o resultado da subtração é: " + resultado);
+}
+
 //declarando funções
 // () => {}
 //function (){}
