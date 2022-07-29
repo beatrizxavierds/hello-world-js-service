@@ -1,6 +1,6 @@
-function somar(numero1, numero2) {
-  let numero3 = numero1 + numero2;
-  return numero3;
+function somar(numeroA, numeroB) {
+  let resultado = numeroA + numeroB;
+  return resultado;
 }
 
 function subtrair(numeroA, numeroB) {
