@@ -1,5 +1,6 @@
 //importei o express para o app.js
 const express = require("express");
+const calculadora = require("./services/CalculatorService"); //importei o arquivo calculatorservice para usar as funções existentes nele aqui no app.
 
 //executando o servidor express
 const server = express();
@@ -31,18 +32,11 @@ function retornaNome() {
 }
 
 server.get("/soma/:numero1/:numero2", function (req, res) {
-  //console.log(req)
-  //let ss = soma();
   let numero1 = req.params.numero1;
   let numero2 = req.params.numero2;
-  let resultado = soma(parseInt(numero1), parseInt(numero2));
-  res.status(200).send(resultado);
+  let resultado = calculadora.somar(parseInt(numero1), parseInt(numero2));
+  res.status(200).send("o resultado da soma é:" + resultado);
 });
-
-function soma(numero1, numero2) {
-  let numero3 = numero1 + numero2;
-  return "soma =" + numero3;
-}
 
 //declarando funções
 // () => {}
