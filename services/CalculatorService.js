@@ -4,8 +4,8 @@ function somar(numeroA, numeroB) {
 }
 
 function subtrair(numeroA, numeroB) {
-  let numeroSub = numeroA - numeroB;
-  return numeroSub;
+  let resultado = numeroA - numeroB;
+  return resultado;
 }
 
 module.exports = { somar, subtrair };
